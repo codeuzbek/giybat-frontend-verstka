@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="./css/registration.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
-    <title>Document</title>
+    <title>Ro'yxatdan o'tish</title>
 </head>
 <body>
 <div class="wrapper">
@@ -89,80 +89,57 @@
     </header>
     <!-- Header end -->
 
+    <!-- Main start -->
     <main>
-        <section class="registration" id="registration">
-            <div class="container">
-                <div class="registration_container">
-                    <h2 class="registration_title">Roʻyxatdan oʻtish</h2>
-                    <p class="registration_text">
-                        Hisob allaqachon yaratilgan
-                        <a class="registration_link" href="login.html"
-                        >Tizimga kirish
-                        </a>
-                    </p>
-                    <form class="registration_form" id="registrationForm">
-                        <div class="registration_block">
-                            <div class="registration_input_box">
-                                <label class="registration_label" for="name">Ism</label>
-                                <input
-                                        class="registration_input"
-                                        type="text"
-                                        id="name"
-                                        placeholder="Alish"
-                                        required
-                                />
-                            </div>
-
-                            <div class="registration_input_box">
-                                <label class="registration_label" for="phoneEmail">
-                                    Telefon raqami / Email
-                                </label>
-                                <input
-                                        class="registration_input"
-                                        type="text"
-                                        id="phoneEmail"
-                                        placeholder="+998 90 900-00-00"
-                                        value="bigmangcom@gmail.com"
-                                        required
-                                />
-                            </div>
-
-                            <div class="registration_input_box">
-                                <label class="registration_label" for="password">
-                                    Parol
-                                </label>
-                                <input
-                                        class="registration_input"
-                                        type="password"
-                                        id="password"
-                                        required
-                                />
-                            </div>
-
-                            <div class="registration_input_box">
-                                <label class="registration_label" for="confirmPassword">
-                                    Parolni qayta kiriting
-                                </label>
-                                <input
-                                        class="registration_input"
-                                        type="password"
-                                        id="confirmPassword"
-                                        required
-                                />
-                                <span id="errorText" class="error-text"></span>
-                            </div>
+        <section class="registration container">
+            <div class="registration_container">
+                <h2 class="registration_title">Roʻyxatdan oʻtish</h2>
+                <p class="registration_text">
+                    Profil allaqachon yaratilgan
+                    <a class="registration_link" href="login.html">Tizimga kirish</a>
+                </p>
+                <form class="registration_form" id="registrationForm">
+                    <div class="registration_block">
+                        <div class="registration_input_box">
+                            <label class="registration_label" for="name">Ism</label>
+                            <input class="registration_input" type="text" id="name" placeholder="Alish" required/>
                         </div>
 
-                        <div class="registration_btn__box">
-                            <button class="registration_btn" type="submit">
-                                Davom etish
-                            </button>
+                        <div class="registration_input_box">
+                            <label class="registration_label" for="phoneEmail">
+                                Telefon raqami / Email
+                            </label>
+                            <input class="registration_input" type="text" id="phoneEmail"
+                                   placeholder="+998 90 900-00-00" value="bigmangcom@gmail.com" required/>
                         </div>
-                    </form>
-                </div>
+
+                        <div class="registration_input_box">
+                            <label class="registration_label" for="password">
+                                Parol
+                            </label>
+                            <input class="registration_input" type="password" id="password" required/>
+                        </div>
+
+                        <div class="registration_input_box">
+                            <label class="registration_label" for="confirmPassword">
+                                Parolni qayta kiriting
+                            </label>
+                            <input class="registration_input" type="password" id="confirmPassword" required/>
+                            <span id="errorText" class="error-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="registration_btn__box">
+                        <button class="registration_btn" type="submit">
+                            Davom etish
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
+    <!-- Main end -->
+
 </div>
 
 <!-- Footer start -->
@@ -171,7 +148,7 @@
         <div class="footer_container">
             <div class="footer_logo__box">
                 <a href="index.html">
-                    <img src="./images/logo2.png" alt="Book" class="header_logo" />
+                    <img src="./images/logo2.png" alt="Book" class="header_logo"/>
                 </a>
             </div>
             <ul class="footer_list">

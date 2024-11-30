@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./css/header.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="./css/search-result.css"/>
-    <link rel="stylesheet" href="./css/detail-paga.css"/>
+    <link rel="stylesheet" href="./css/post.css"/>
+    <link rel="stylesheet" href="./css/navigation.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
     <title>G'iybat.uz</title>
 </head>
@@ -91,60 +92,79 @@
     <!-- Header end -->
 
     <main>
-        <section class="carSearch" id="carSearch">
-            <div class="container">
-                <div class="carSearch_container">
-                    <div class="cars_list">
-                        <a class="news" id="homeLink">Asosiy Saxifa</a>
-                        <span class="arrow"></span>
-                        <a class="news" id="newsLink">Qidiruv</a>
-                    </div>
-                    <div class="carSearch_content">
-                        <h2 class="carSearch_title">Qidiruv “Latta”</h2>
-                        <span class="carSearch_span">3 topildi</span>
-                    </div>
-                    <div class="carSearch_box">
-                        <form class="carSearch_form">
-                            <div class="carSearch_input__box">
-                                <input placeholder="Latta" type="text" class="carSearch_input"/>
-                                <button class="carSearch_btn"></button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="posts_block">
-                        <div class="posts_box">
-                            <div class="posts_img__box">
-                                <img src="./images/posts1.png" alt="Posts" class="posts_img"/>
-                            </div>
-                            <div class="posts_content">
-                                <h3 class="posts_title__sub">Videohub.uz dan dasturlashni o'rganish</h3>
-                                <p class="posts_text">14.04.2024</p>
-                            </div>
-                        </div>
-                        <div class="posts_box">
-                            <div class="posts_img__box">
-                                <img src="./images/posts2.png" alt="Posts" class="posts_img"/>
-                            </div>
-                            <div class="posts_content">
-                                <h3 class="posts_title__sub">
-                                    Meeting-dagi yangi mishmishlar
-                                </h3>
-                                <p class="posts_text">14.04.2024</p>
-                            </div>
-                        </div>
-                        <div class="posts_box">
-                            <div class="posts_img__box">
-                                <img src="./images/posts3.png" alt="Posts" class="posts_img"/>
-                            </div>
-                            <div class="posts_content">
-                                <h3 class="posts_title__sub">
-                                    3 soat-da Java-ni o'rganish
-                                </h3>
-                                <p class="posts_text">14.04.2024</p>
-                            </div>
-                        </div>
-                    </div>
+
+        <!-- Navigation start -->
+        <section class="page-navigation container">
+            <a class="news" href="index.html">Asosiy Saxifa</a>
+            <span class="arrow"></span>
+            <span class="news">Qidiruv</span>
+        </section>
+        <!-- Navigation end -->
+
+        <section class="container">
+
+            <!--  post-search start -->
+            <div class="post-search_wrapper">
+                <h2 class="post-search_title">Qidiruv “Latta”</h2>
+                <span class="post-search_span">3 topildi</span>
+            </div>
+
+            <form class="mb-16">
+                <div class="post-search_input__box">
+                    <input placeholder="Latta" type="text" class="post-search_input"/>
+                    <button class="post-search_btn"></button>
                 </div>
+            </form>
+            <!--  post-search end -->
+
+            <div class="post_container mb-16">
+                <!-- Post box start -->
+                <div class="post_box">
+                    <a href="post-detail.html">
+                        <div class="post_img__box">
+                            <img src="./images/book1.png" alt="Book1" class="post_img"/>
+                        </div>
+                        <h3 class="post_title">
+                            Videohub.uz da dasturlashni online o’qish
+                        </h3>
+                        <p class="post_text">14.04.2024</p>
+                    </a>
+                </div>
+                <!-- Post box end -->
+
+                <!-- Post box start -->
+                <div class="post_box">
+                    <a href="post-detail.html">
+                        <div class="post_img__box">
+                            <img
+                                    src="./images/book2.png"
+                                    alt="Book1"
+                                    class="post_img"
+                            />
+                        </div>
+                        <h3 class="post_title post_short">Meeting-dagi yangi mishmishlar</h3>
+                        <p class="post_text">14.04.2024</p>
+                    </a>
+                </div>
+                <!-- Post box end -->
+
+                <!-- Post box start -->
+                <div class="post_box">
+                    <a href="post-detail.html">
+                        <div class="post_img__box">
+                            <img
+                                    src="./images/book3.png"
+                                    alt="Book1"
+                                    class="post_img"
+                            />
+                        </div>
+                        <h3 class="post_title">
+                            3 soat-da Java-ni o’rganish
+                        </h3>
+                        <p class="post_text">14.04.2024</p>
+                    </a>
+                </div>
+                <!-- Post box end -->
             </div>
         </section>
     </main>
@@ -179,6 +199,8 @@
     </div>
 </footer>
 <!-- Footer end -->
+
+<script src="./js/header.js"></script>
 
 </body>
 </html>

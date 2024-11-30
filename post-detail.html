@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/header.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
-    <link rel="stylesheet" href="./css/detail-paga.css"/>
+    <link rel="stylesheet" href="./css/post.css"/>
+    <link rel="stylesheet" href="./css/navigation.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
     <title>Document</title>
 </head>
@@ -92,119 +93,126 @@
 
     <!-- Main start -->
     <main>
-        <section id="cars" class="cars">
-            <div class="container">
-                <div class="cars_list">
-                    <a class="news" href="index.html">Asosiy Saxifa</a>
-                    <span class="arrow"></span>
-                    <span class="news">Yangilik</span>
-                </div>
-                <div class="cars_container">
-                    <p class="cars_data">14.04.2024</p>
-                    <h2 class="cars_title">
-                        Kitob o‘qishning ajoyib va kulgili tomonlari
-                    </h2>
-                    <div class="cars_img__box">
-                        <img src="./images/deposito.png" alt="deposito" class="cars_deposito"/>
-                    </div>
-                    <p class="cars_text">Kitob o‘qishning foydalari haqida gap ketganda, hamma gapni jiddiy
-                        boshlaydi. Lekin,
-                        aytaylik, hayot shunchaki zerikarli emasmi? Mana, kitob o‘qishning avzalliklari haqida
-                        kulgili bir qarash:</p>
 
-                    <div class="cars_text__average">
-                        <p>1. <b>Kitob o‘qiyotgan odamning ko‘zida hamma narsa
-                            donolikdir.</b> <br>
-                            Ko‘chada bir kitob bilan yurganingizda, odamlar sizni qandaydir ilmiy sirlarni
-                            ochayotgan odam deb o‘ylaydi. Aslida esa, siz boshqalar farishtalar va zombi urushini
-                            o‘qiyotgan bo‘lishingiz mumkin.</p>
-                        <br>
-                        <p>2. <b>Kitob – shaxsiy teleportatsiya mashinasi.</b> <br>
-                            Siz pulingizni tejab, chet ellarga bormasdan dunyoni aylanishingiz mumkin. Yangi Zelandiya
-                            o‘rmonlariga safar qilishni xohlaysizmi? Yoki Marsga uchishni? Birgina roman yetarli! Biroq,
-                            do‘stlaringiz sizni divanda yotgan holda "ekspeditsiya" qilayotganingizni bilib, xafa
-                            bo‘lishi mumkin.
-                        </p>
-                        <br>
-                        <p> 3. <b>Kitoblar "uyqu dori"ning o‘rnini bosadi.</b> <br>
-                            O‘qishni boshlaganingizdan 10 daqiqa o‘tgach, ko‘zlaringiz ilinishni boshlasa, bu fiziologik
-                            mo‘jiza! Har qanday detektiv yoki fantastik hikoya yaxshi uyquga sabab bo‘lishi mumkin.
-                            Shunday qilib, kitoblar bilan tonggacha kechani bedor o‘tkazish yoki uxlab qolish – tanlov
-                            sizniki!
-                        </p>
-                        <br>
-                        <p>4. <b>Kitoblar – ijtimoiy tarmoqsiz hayotning bir qismi.</b> <br>
-                            Tasavvur qiling, elektr toki yo‘q. Telefoningizda zaryad tugagan. Hayotingiz tamommi? Yo‘q,
-                            agar kitobingiz bo‘lsa! Kitob o‘qiyotganingizda, boshqa dunyolarni "skrollash" qilishingiz
-                            mumkin. Faqat, afsuski, "like" tugmasi yo‘q.
-                        </p>
-                        <br>
-                        <p>5. <b>Kitoblar sog‘liq uchun foydali.</b><br>
-                            Fizik tomondan ham! Yotoqdan olib kelayotgan og‘ir ensiklopediyalar – mushaklarni
-                            rivojlantiradi. Shunchaki Kindle yoki planshet ishlatishni unuting, chunki ular sog‘lom
-                            hayot tarziga mos emas.
-                        </p>
-                        <br>
-                        <p>
-                            6. <b>Kitoblar sizni yangi so‘zlar bilan boyitadi.</b> <br>
-                            Masalan, siz hozir "kvintessensiya" yoki "surunkali melanxoliya" kabi so‘zlarni ishlata
-                            boshlaysiz. Do‘stlaringiz esa hayron qoladi: "Bu odam nimalar deyapti?"
+        <!-- Navigation start -->
+        <section class="page-navigation container">
+            <a class="news" href="index.html">Asosiy Saxifa</a>
+            <span class="arrow"></span>
+            <span class="news">Yangilik</span>
+        </section>
+        <!-- Navigation end -->
 
-                        </p>
-                    </div>
+        <!-- PostDetail start -->
+        <section class="post-detail">
+            <p class="post-detail_data">14.04.2024</p>
+            <h2 class="post-detail_title">
+                Kitob o‘qishning ajoyib va kulgili tomonlari
+            </h2>
+            <div class="post-detail_img__box">
+                <img src="./images/deposito.png" alt="deposito" class="post-detail_deposito"/>
+            </div>
+            <p class="post-detail_description">Kitob o‘qishning foydalari haqida gap ketganda, hamma gapni jiddiy
+                boshlaydi. Lekin,
+                aytaylik, hayot shunchaki zerikarli emasmi? Mana, kitob o‘qishning avzalliklari haqida
+                kulgili bir qarash:</p>
+            <div class="post-detail_content">
+                <p>1. <b>Kitob o‘qiyotgan odamning ko‘zida hamma narsa
+                    donolikdir.</b> <br>
+                    Ko‘chada bir kitob bilan yurganingizda, odamlar sizni qandaydir ilmiy sirlarni
+                    ochayotgan odam deb o‘ylaydi. Aslida esa, siz boshqalar farishtalar va zombi urushini
+                    o‘qiyotgan bo‘lishingiz mumkin.</p>
+                <br>
+                <p>2. <b>Kitob – shaxsiy teleportatsiya mashinasi.</b> <br>
+                    Siz pulingizni tejab, chet ellarga bormasdan dunyoni aylanishingiz mumkin. Yangi Zelandiya
+                    o‘rmonlariga safar qilishni xohlaysizmi? Yoki Marsga uchishni? Birgina roman yetarli! Biroq,
+                    do‘stlaringiz sizni divanda yotgan holda "ekspeditsiya" qilayotganingizni bilib, xafa
+                    bo‘lishi mumkin.
+                </p>
+                <br>
+                <p> 3. <b>Kitoblar "uyqu dori"ning o‘rnini bosadi.</b> <br>
+                    O‘qishni boshlaganingizdan 10 daqiqa o‘tgach, ko‘zlaringiz ilinishni boshlasa, bu fiziologik
+                    mo‘jiza! Har qanday detektiv yoki fantastik hikoya yaxshi uyquga sabab bo‘lishi mumkin.
+                    Shunday qilib, kitoblar bilan tonggacha kechani bedor o‘tkazish yoki uxlab qolish – tanlov
+                    sizniki!
+                </p>
+                <br>
+                <p>4. <b>Kitoblar – ijtimoiy tarmoqsiz hayotning bir qismi.</b> <br>
+                    Tasavvur qiling, elektr toki yo‘q. Telefoningizda zaryad tugagan. Hayotingiz tamommi? Yo‘q,
+                    agar kitobingiz bo‘lsa! Kitob o‘qiyotganingizda, boshqa dunyolarni "skrollash" qilishingiz
+                    mumkin. Faqat, afsuski, "like" tugmasi yo‘q.
+                </p>
+                <br>
+                <p>5. <b>Kitoblar sog‘liq uchun foydali.</b><br>
+                    Fizik tomondan ham! Yotoqdan olib kelayotgan og‘ir ensiklopediyalar – mushaklarni
+                    rivojlantiradi. Shunchaki Kindle yoki planshet ishlatishni unuting, chunki ular sog‘lom
+                    hayot tarziga mos emas.
+                </p>
+                <br>
+                <p>
+                    6. <b>Kitoblar sizni yangi so‘zlar bilan boyitadi.</b> <br>
+                    Masalan, siz hozir "kvintessensiya" yoki "surunkali melanxoliya" kabi so‘zlarni ishlata
+                    boshlaysiz. Do‘stlaringiz esa hayron qoladi: "Bu odam nimalar deyapti?"
 
-                </div>
+                </p>
             </div>
         </section>
+        <!-- PostDetail end -->
 
-        <section id="posts" class="posts">
-            <div class="container">
-                <div class="posts_container">
-                    <h2 class="posts_title">Oxirgi G'iybatlar</h2>
-                    <div class="page_container">
-                        <div class="page_box">
-                            <a href="post-detail.html">
-                                <div class="page_img__box">
-                                    <img src="./images/book1.png" alt="Book1" class="page_img"/>
-                                </div>
-                                <h3 class="page_title">
-                                    Videohub.uz da dasturlashni online o’qish
-                                </h3>
-                                <p class="page_text">14.04.2024</p>
-                            </a>
+        <!-- Post list start -->
+        <section class="post-wrapper container">
+            <h2 class="post_main_title">Oxirgi G'iybatlar</h2>
+
+            <div class="post_container">
+                <!-- Post box start -->
+                <div class="post_box">
+                    <a href="post-detail.html">
+                        <div class="post_img__box">
+                            <img src="./images/book1.png" alt="Book1" class="post_img"/>
                         </div>
-                        <div class="page_box">
-                            <a href="post-detail.html">
-                                <div class="page_img__box">
-                                    <img
-                                            src="./images/book2.png"
-                                            alt="Book1"
-                                            class="page_img"
-                                    />
-                                </div>
-                                <h3 class="page_title page_short">Meeting-dagi yangi mishmishlar</h3>
-                                <p class="page_text">14.04.2024</p>
-                            </a>
-                        </div>
-                        <div class="page_box">
-                            <a href="post-detail.html">
-                                <div class="page_img__box">
-                                    <img
-                                            src="./images/book3.png"
-                                            alt="Book1"
-                                            class="page_img"
-                                    />
-                                </div>
-                                <h3 class="page_title">
-                                    3 soat-da Java-ni o’rganish
-                                </h3>
-                                <p class="page_text">14.04.2024</p>
-                            </a>
-                        </div>
-                    </div>
+                        <h3 class="post_title">
+                            Videohub.uz da dasturlashni online o’qish
+                        </h3>
+                        <p class="post_text">14.04.2024</p>
+                    </a>
                 </div>
+                <!-- Post box end -->
+
+                <!-- Post box start -->
+                <div class="post_box">
+                    <a href="post-detail.html">
+                        <div class="post_img__box">
+                            <img
+                                    src="./images/book2.png"
+                                    alt="Book1"
+                                    class="post_img"
+                            />
+                        </div>
+                        <h3 class="post_title post_short">Meeting-dagi yangi mishmishlar</h3>
+                        <p class="post_text">14.04.2024</p>
+                    </a>
+                </div>
+                <!-- Post box end -->
+
+                <!-- Post box start -->
+                <div class="post_box">
+                    <a href="post-detail.html">
+                        <div class="post_img__box">
+                            <img
+                                    src="./images/book3.png"
+                                    alt="Book1"
+                                    class="post_img"
+                            />
+                        </div>
+                        <h3 class="post_title">
+                            3 soat-da Java-ni o’rganish
+                        </h3>
+                        <p class="post_text">14.04.2024</p>
+                    </a>
+                </div>
+                <!-- Post box end -->
             </div>
         </section>
+        <!-- Post list end -->
     </main>
     <!-- Main end -->
 

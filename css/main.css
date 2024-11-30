@@ -347,3 +347,11 @@ button {
 .ml-3 {
     margin-left: 3rem;
 }
+
+.mb-16 {
+    margin-bottom: 40px;
+}
+
+.position-relative {
+    position: relative;
+}
