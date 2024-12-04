@@ -3,23 +3,30 @@ const input2 = document.getElementById('input2');
 const input3 = document.getElementById('input3');
 const input4 = document.getElementById('input4');
 const input5 = document.getElementById('input5');
+const userPhone = localStorage.getItem("userPhoneNumber");
+document.getElementById('userPhone').textContent = userPhone;
 
-function handleInput() {
-    if (input1.value && input2.value && input3.value && input4.value && input5.value) {
-        handleSubmit(); // Call the submit function
-    }
+function handleInput(event) {
+    /*const enteredValue = event.target.value;
+    const elementId = event.target.id;
+    const nextInput = event.target.nextElementSibling;*/
 }
 
 function handleSubmit() {
-    // Your submission logic here
-    console.log('Form submitted:', input1.value + input2.value + input3.value + input4.value + input5.value);
-    // You can add more complex logic like sending data to a server, etc.
+    // send confirm request
 }
 
 function resendSms() {
     // sms ni qayta jo'natish
 }
 
+function clearInput() {
+    input1.value = '';
+    input2.value = '';
+    input3.value = '';
+    input4.value = '';
+    input5.value = '';
+}
 
 input1.addEventListener('input', handleInput);
 input2.addEventListener('input', handleInput);

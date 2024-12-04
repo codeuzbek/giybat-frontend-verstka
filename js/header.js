@@ -42,11 +42,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     //Show profile menu on header
+    const userDetailStr = localStorage.getItem("userDetail");
+    if (userDetailStr === null || userDetailStr === undefined) {
+        return;
+    }
+    const userDetail = JSON.parse(userDetailStr);
+    const userName = userDetail.name;
 
+    const loginBtn = document.getElementById("header_btn");
+    loginBtn.style.display = "none";
+    const menuUserDetailWrapper = document.getElementById("header_entrance");
+    menuUserDetailWrapper.style.display = "block";
+
+    const headerUserNameSpan = document.getElementById("header_user_name_id");
+    headerUserNameSpan.textContent = userName;
 
 });
 
 // logout
 function logout() {
+    const loginBtn = document.getElementById("header_btn");
+    loginBtn.style.display = "block";
 
+    const menuUserDetailWrapper = document.getElementById("header_entrance");
+    menuUserDetailWrapper.style.display = "none";
+
+    localStorage.removeItem("userDetail")
+    localStorage.removeItem("jwtToken");
+
+    window.location.href = "./index.html";
 }
