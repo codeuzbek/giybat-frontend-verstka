@@ -10,17 +10,14 @@ function handleInput(event) {
     /*const enteredValue = event.target.value;
     const elementId = event.target.id;
     const nextInput = event.target.nextElementSibling;*/
-}
 
-function handleSubmit() {
-    // send confirm request
 }
 
 function resendSms() {
     // sms ni qayta jo'natish
 }
 
-function clearInput() {
+function clearInput(){
     input1.value = '';
     input2.value = '';
     input3.value = '';

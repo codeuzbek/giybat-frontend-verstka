@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
     const userDetail = JSON.parse(userDetailStr);
-    const userName = userDetail.name;
+    const name = userDetail.name;
 
     const loginBtn = document.getElementById("header_btn");
     loginBtn.style.display = "none";
@@ -55,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuUserDetailWrapper.style.display = "block";
 
     const headerUserNameSpan = document.getElementById("header_user_name_id");
-    headerUserNameSpan.textContent = userName;
-
+    headerUserNameSpan.textContent = name;
 });
 
 // logout
@@ -72,3 +71,4 @@ function logout() {
 
     window.location.href = "./index.html";
 }
+
