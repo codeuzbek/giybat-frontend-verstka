@@ -13,6 +13,7 @@
 </head>
 <body>
 <div class="wrapper">
+
     <!-- Header start -->
     <header class="header">
         <div class="container">
@@ -48,17 +49,12 @@
                         </a>
                         <div class="header_entrance" id="header_entrance">
                             <button class="header_entrance__toggle">
-                                <span class="icon user-icon">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                       fill="currentColor" viewBox="0 0 16 16">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8 9a5 5 0 0 0-4.546 2.916A2 2 0 0 0 5.07 14h5.858a2 2 0 0 0 1.616-2.084A5 5 0 0 0 8 9z"/>
-                                  </svg>
-                                </span>
+                                <img id="header_user_image_id" class="header_user_image" src="./images/default-user.png" alt="">
                                 <span id="header_user_name_id">UserName</span>
                             </button>
                             <ul class="header_entrance__menu">
                                 <li>
-                                    <a href="./profile-post-list.html">
+                                    <a href="profile-post-list.html">
                                     <span class="icon">
                                       <svg xmlns="http://www.w3.org/2000/svg"
                                            width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -108,8 +104,23 @@
         </div>
         <!-- Profile end-->
 
+        <!-- Create Post button -->
+        <div class="d-flex justify-content-end mb-1">
+            <a href="./post-create.html" class="btn btn-primary">G’iybat yaratish</a>
+        </div>
+        <!-- Create Post button end -->
+
         <!-- Post List-->
-        <div class="profile-post_container mb-16">
+        <div class="profile-post_container mb-16" id="profile_post_container_id">
+            <!-- <div class="position-relative post_box">
+                <a class="profile_tab_btn" href="./post-create.html?id=dasdasda"></a>
+                <div class="post_img__box">
+                    <img src="./images/book1.png" alt="Posts" class="post_img"/>
+                </div>
+                <h3 class="post_title">Dasturlashni o'rganish</h3>
+                <p class="post_text">14.04.2024</p>
+            </div>-->
+
             <div class="position-relative post_box">
                 <button class="profile_tab_btn"></button>
                 <div class="post_img__box">
@@ -218,6 +229,7 @@
 <!-- Footer end -->
 
 <script src="./js/header.js"></script>
+<script src="./js/profile-post-list.js"></script>
 
 </body>
 </html>

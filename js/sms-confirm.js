@@ -11,10 +11,37 @@ function handleInput(event) {
     const elementId = event.target.id;
     const nextInput = event.target.nextElementSibling;*/
 
+    const enteredValue = event.target.value;
+    const nextInput = event.target.nextElementSibling;
+    if (enteredValue && nextInput) {
+        nextInput.focus();
+    } else if (nextInput === null) {
+        handleSubmit();
+    }
+}
+
+function handleSubmit() {
+    // send confirm request
+    let code = null;
+    if (input1.value && input2.value && input3.value && input4.value && input5.value) {
+        code = input1.value + input2.value + input3.value + input4.value + input5.value;
+    }
+    if (code == null) { // todo
+        return;
+    }
+
+    const body = {
+        "phone": userPhone,
+        "code": code
+    }
+
 }
 
 function resendSms() {
     // sms ni qayta jo'natish
+    const body = {
+        "phone": userPhone
+    }
 }
 
 function clearInput(){

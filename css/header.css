@@ -271,6 +271,10 @@
   display: block;
 }
 
+.header_user_image{
+  width: 24px;
+  height: 24px;
+}
 /* Menu end*/
 
 .header_entrance__block {

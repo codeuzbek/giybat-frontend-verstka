@@ -5,10 +5,12 @@ window.onload = function () {
     }
 
     const userDetailObj = JSON.parse(userDetailJon);
-    console.log(userDetailObj);
 
     document.getElementById("profile_settings_name").textContent = userDetailObj.name;
     document.getElementById("profile_settings_username").textContent = userDetailObj.username;
+    if(userDetailObj.photo){
+        document.getElementById("profile_settings_photo_id").src = userDetailObj.photo.url;
+    }
 };
 
 
