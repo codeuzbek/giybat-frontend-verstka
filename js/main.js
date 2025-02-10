@@ -1,25 +1,8 @@
-function toggleDropdown() {
-    const dropdownContent = document.getElementById("dropdown-content");
-    const dropdownToggle = document.querySelector(".dropdown_toggle");
-
-    dropdownContent.classList.toggle("show");
-    dropdownToggle.classList.toggle("active"); // Добавляем/удаляем класс для вращения стрелки
+function dateFormat(dateSrt) {
+    const date = new Date(dateSrt);
+    return String(date.getDate()).padEnd(2, "0") + "."
+        + String(date.getMonth() + 1).padStart(2, "0") + "."
+        + date.getFullYear() + " "
+        + String(date.getHours()).padStart(2, "0") + ":"
+        + String(date.getMinutes()).padStart(2, "0");
 }
-
-function setLanguage(lang) {
-    document.getElementById("current-lang").textContent = lang;
-    toggleDropdown(); // Закрыть dropdown после выбора
-}
-
-// Закрываем dropdown при клике вне его
-window.onclick = function (event) {
-    if (!event.target.closest(".dropdown_toggle")) {
-        const dropdownContent = document.getElementById("dropdown-content");
-        const dropdownToggle = document.querySelector(".dropdown_toggle");
-
-        if (dropdownContent.classList.contains("show")) {
-            dropdownContent.classList.remove("show");
-            dropdownToggle.classList.remove("active"); // Убираем класс, когда меню закрывается
-        }
-    }
-};
