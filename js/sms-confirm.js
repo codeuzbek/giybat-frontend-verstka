@@ -36,33 +36,6 @@ function handleSubmit() {
     }
 
     const lang = document.getElementById("current-lang").textContent;
-
-    fetch("http://localhost:8080/auth/registration/sms-verification", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept-Language': lang
-        },
-        body: JSON.stringify(body)
-    }).then(response => {
-        if (response.ok) {
-            return response.json()
-        } else {
-            return Promise.reject(response.text());
-        }
-    }).then(data => {
-        clearInput();
-        localStorage.setItem("userDetail", JSON.stringify(data))
-        localStorage.setItem("jwtToken", data.jwt);
-        localStorage.removeItem("userPhoneNumber");
-        window.location.href = "./profile-post-list.html";
-    }).catch(error => {
-        error.then(errMessage => {
-            alert(errMessage)
-        })
-    })
-
-
 }
 
 function resendSms() {
@@ -72,29 +45,6 @@ function resendSms() {
     }
 
     const lang = document.getElementById("current-lang").textContent;
-
-    fetch("http://localhost:8080/auth/registration/sms-verification-resend", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept-Language': lang
-        },
-        body: JSON.stringify(body)
-    }).then(response => {
-        if (response.ok) {
-            return response.json()
-        } else {
-            return Promise.reject(response.text());
-        }
-    }).then(data => {
-        console.log(data);
-        alert(data.message);
-    }).catch(error => {
-        error.then(errMessage => {
-            alert(errMessage)
-        })
-    })
-
 }
 
 function clearInput(){

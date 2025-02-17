@@ -62,29 +62,29 @@ async function uploadImage() {
         }
         const lang = document.getElementById("current-lang").textContent;
 
-        /*return fetch('http://localhost:8080/attach/upload', {
-            method: 'POST',
-            headers: {
-                'Accept-Language': lang,
-                'Authorization': 'Bearer ' + jwt
-            },
-            body: formData
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.id) {
-                    return data.id;
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                return null;
-            });*/
+        /* return fetch('http://localhost:8080/attach/upload', {
+             method: 'POST',
+             headers: {
+                 'Accept-Language': lang,
+                 'Authorization': 'Bearer ' + jwt
+             },
+             body: formData
+         })
+             .then(response => {
+                 if (!response.ok) {
+                     throw new Error('Network response was not ok');
+                 }
+                 return response.json();
+             })
+             .then(data => {
+                 if (data.id) {
+                     return data.id;
+                 }
+             })
+             .catch(error => {
+                 console.error('Error:', error);
+                 return null;
+             });*/
     }
 }
 
@@ -135,13 +135,6 @@ async function updatePost() {
         }
     }
 
-    /*const jwt = localStorage.getItem('jwtToken');
-    if (!jwt) {
-        window.location.href = './login.html';
-        return;
-    }
-    const lang = document.getElementById("current-lang").textContent;*/
-
 }
 
 function deletePost() {
@@ -152,12 +145,5 @@ function deletePost() {
     if (!confirm("G'iybatni o'chirmoqchimisiz?")) {
         return;
     }
-
-    // const jwt = localStorage.getItem('jwtToken');
-    // if (!jwt) {
-    //     window.location.href = './login.html';
-    //     return;
-    // }
-    // const lang = document.getElementById("current-lang").textContent;
 }
 

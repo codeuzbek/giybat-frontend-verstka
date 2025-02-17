@@ -123,7 +123,7 @@
                     <input type="text" id="admin_post_list_profile_input_id" placeholder="name, surname" name="profile">
                 </div>
                 <div class="form-input-group form-button-margin">
-                    <button type="submit" onclick="getPostList()">Search</button>
+                    <button type="submit" onclick="getPostList()" id="admin-post-search-btn-id" >Search</button>
                 </div>
             </div>
         </div>
@@ -253,6 +253,7 @@
     <!-- Main end -->
 
 </div>
+
 <!-- Footer start -->
 <footer class="footer">
     <div class="container">
@@ -281,6 +282,9 @@
     </div>
 </footer>
 <!-- Footer end -->
+
+<!-- Popup Container -->
+<div id="popup-container"></div>
 
 <script src="./js/header.js"></script>
 <script src="./js/admin-post-list.js"></script>

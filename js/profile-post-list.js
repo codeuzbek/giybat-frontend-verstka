@@ -2,18 +2,19 @@
 //     getPostList();
 // };
 window.addEventListener("DOMContentLoaded", function () {
-    // getPostList();
+    getPostList();
 });
 
 let currentPage = 1;
 
 function getPostList() {
     const jwt = localStorage.getItem('jwtToken');
-    if (!jwt) {
-        window.location.href = './login.html';
-        return;
-    }
-    const lang = document.getElementById("current-lang").textContent;
+    // if (!jwt) {
+    //     window.location.href = './login.html';
+    //     return;
+    // }
+    // const lang = document.getElementById("current-lang").textContent;
+    // let size = 9;
 }
 
 function showPostList(postList) {
@@ -113,11 +114,6 @@ function addBtn(btnText, pageNumberWrapper, isSelected, isDots) {
     btnWrapper.appendChild(btn);
     pageNumberWrapper.appendChild(btnWrapper);
 }
-
-
-
-
-
 
 
 

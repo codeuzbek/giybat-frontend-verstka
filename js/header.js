@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // logout
 function logout() {
-   /* const loginBtn = document.getElementById("header_btn");
+    const loginBtn = document.getElementById("header_btn");
     loginBtn.style.display = "block";
 
     const menuUserDetailWrapper = document.getElementById("header_entrance");
@@ -107,6 +107,6 @@ function logout() {
     localStorage.removeItem("userDetail")
     localStorage.removeItem("jwtToken");
 
-    window.location.href = "./index.html";*/
+   // window.location.href = "./index.html";
 }
 

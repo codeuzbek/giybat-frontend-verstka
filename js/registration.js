@@ -28,7 +28,7 @@ document.getElementById("registrationForm")
         }
 
         const lang = document.getElementById("current-lang").textContent;
-});
+    });
 
 
 function checkEmailOrPhone(value) {

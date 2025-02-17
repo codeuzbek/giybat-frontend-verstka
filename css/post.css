@@ -47,6 +47,7 @@
     margin-bottom: 2px;
     /*border-radius: 50px;*/
     overflow: hidden;
+    width: 100%;
 }
 
 .post_img {
@@ -209,7 +210,6 @@
     flex-wrap: wrap;
 }
 
-
 .profile_tab_btn {
     background-color: #ffffff;
     border-radius: 50%;
@@ -217,6 +217,8 @@
     z-index: 1000;
     right: 6px;
     top: 6px;
+    width: 10% !important;
+
 }
 
 .profile_tab_btn::before {
